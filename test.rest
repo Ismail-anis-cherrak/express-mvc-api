@@ -1,0 +1,49 @@
+###? Create User
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "Ismail Cherrak",
+    "email": "ismail@example.com",
+    "password": "password123"
+}
+
+###? Get All Users
+GET http://localhost:3000/api/users
+
+###? Get Single User
+GET http://localhost:3000/api/users/68a0edfae448a10ab8c8d79d
+
+###? Update User (PUT)
+PUT http://localhost:3000/api/users/68a0edfae448a10ab8c8d79d
+Content-Type: application/json
+
+{
+    "name": "Ismailou Cherrak",
+    "email": "ismail@example.com",
+    "password": "newpassword123"
+}
+
+###? Update User (PATCH)
+PATCH http://localhost:3000/api/users/68a0edfae448a10ab8c8d79d
+Content-Type: application/json
+
+{
+    "email": "ismailou.cherrak@example.com"
+}
+
+###? Delete User
+DELETE http://localhost:3000/api/users/68a0edfae448a10ab8c8d79d
+
+###? Hello from WIW Route
+GET http://localhost:3000/api/wiw
+
+###? create product
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "description": "Description for Product 1",
+    "price": 100
+}
